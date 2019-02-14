@@ -1,0 +1,33 @@
+
+in dao--->write business logic
+in service---->dao implementation
+in controller---->service impl
+
+create index page,
+
+on submitting index page, it goes to web.xml file. where, in xml file, we hav written that
+for  any url, go to controller
+
+in controller add annotation @Controller, in that controller class , to go to specific method add @ReferenceMapping("/name in the jsp file")
+
+this leads to a webpage. create a jsp file(this jsp page is returned in controller)
+
+
+
+database properties(username,pswd)
+
+
+
+
+String editAssetNr = request.getParameter("editAssetNr");
+	//get all assets if no number entered
+	if (editAssetNr == null) {
+  	editAssetNr = "*";
+	} else {
+  	editAssetNr = editAssetNr.trim();
+  	if ("".equals(editAssetNr)) {
+    //get all assets if number was an empty space
+    editAssetNr = "*";
+check package name of bean in sevice-config.xml
+
+
